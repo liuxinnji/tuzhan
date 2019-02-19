@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="my/stylesheets/swiper.min.css">
+		<link rel="stylesheet" href="my/stylesheets/stley.css">
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<title></title>
+	</head>
+	<style>
+		.swiper-container {
+			width: 100%;
+			height: 6.4rem;
+		}
+	</style>
+	<body>
+		<div class="box">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="sontent1">
+							<div class="di">
+								<img src="https://p-cdn2.rabbitpre.com/a344f317-a976-4a2c-ab73-9389cb4994a9?imageMogr2/auto-orient|imageMogr2/cut/640x1008x0x0/format/webp" alt="">
+							</div>
+							<div class="sonten">
+								<div class="left-deng"><img src="https://p-cdn4.rabbitpre.com/a9ff4fa0-5621-4f99-a7e1-b96ffbe0f156?imageMogr2/auto-orient|imageMogr2/thumbnail/282x596|imageMogr2/cut/282x596x0x0/format/webp" alt=""></div>
+								<div class="right-deng"><img src="https://p-cdn4.rabbitpre.com/a9ff4fa0-5621-4f99-a7e1-b96ffbe0f156?imageMogr2/auto-orient|imageMogr2/thumbnail/282x596|imageMogr2/cut/282x596x0x0/format/webp" alt=""></div>
+								<div class="music">
+									<div class="animate-wrapper">
+										<div class="bgmusic">
+											<div class="control">
+												<div class="control-after"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="ditu"><img src="https://p-cdn1.rabbitpre.com/01c9c2cf-353e-48d2-a5ff-595b47654514?imageMogr2/auto-orient|imageMogr2/thumbnail/624x1002|imageMogr2/cut/624x1002x0x0/format/webp" alt=""></div>
+								<div class="text-nao"><img src="//p-cdn2.rabbitpre.com/ec9cfec1-653f-4992-ace3-40429666b37d?imageMogr2/auto-orient|imageMogr2/thumbnail/105x194|imageMogr2/cut/105x194x0x0/format/webp" alt=""></div>
+								<div class="text-yuan"><img src="//p-cdn3.rabbitpre.com/19168dbe-6fd7-40a3-b711-bdb1df65abd8?imageMogr2/auto-orient|imageMogr2/thumbnail/139x187|imageMogr2/cut/139x187x0x0/format/webp" alt=""></div>
+								<div class="text-xiao"><img src="//p-cdn4.rabbitpre.com/53900826-060e-46bc-8bd6-934ce4003dee?imageMogr2/auto-orient|imageMogr2/thumbnail/122x196|imageMogr2/cut/122x196x0x0/format/webp" alt=""></div>
+								<div class="text-yuan-1"><img src="//p-cdn1.rabbitpre.com/d12577a4-6625-47f0-b7c4-07f27c68b7de?imageMogr2/auto-orient|imageMogr2/thumbnail/286x254|imageMogr2/cut/286x254x0x0/format/webp" alt=""></div>
+								<div class="text-nao-1"><img src="//p-cdn4.rabbitpre.com/23843aea-fbbc-4617-a2a4-6722113e1403?imageMogr2/auto-orient|imageMogr2/thumbnail/286x244|imageMogr2/cut/286x244x0x0/format/webp" alt=""></div>
+								<div class="text-xiao-1"><img src="//p-cdn1.rabbitpre.com/d20b0863-0152-4da4-9576-2631c47ea858?imageMogr2/auto-orient|imageMogr2/thumbnail/287x244|imageMogr2/cut/287x244x0x0/format/webp" alt=""></div>
+
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">Slide 2</div>
+					<div class="swiper-slide">Slide 3</div>
+					<div class="swiper-slide">Slide 4</div>
+					<div class="swiper-slide">Slide 5</div>
+					<div class="swiper-slide">Slide 6</div>
+					<div class="swiper-slide">Slide 7</div>
+				</div>
+				<!-- 如果需要分页器 -->
+				<div class="swiper-pagination"></div>
+				<!-- 如果需要导航按钮 -->
+			</div>
+			<div class="jiantou">
+				<div class="top iconfont"><img src="img/top.png" alt=""></div>
+				<div class="bottom iconfont"><img src="img/bottom.png" alt=""></div>
+			</div>
+		</div>
+	</body>
+	<script src="js/swiper.min.js"></script>
+	<script>
+		var mySwiper = new Swiper('.swiper-container', {
+			direction: 'vertical', // 垂直切换选项
+			loop: true, // 循环模式选项
+
+			// 如果需要分页器
+			pagination: {
+				el: '.swiper-pagination',
+				clickable :true,
+			},
+
+			// 如果需要前进后退按钮
+			navigation: {
+				nextEl: '.bottom',
+				prevEl: '.top',
+			},
+
+			// 如果需要滚动条
+			scrollbar: {
+				el: '.swiper-scrollbar',
+			},
+		})
+	</script>
+	</body>
+</html>
