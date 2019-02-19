@@ -10,6 +10,7 @@ img{
   padding: 0.4rem 0.5rem;
   width:4.65rem;
   position: relative;
+  font-size: 0;
   .music{
     width: 0.3rem;
     height: 0.3rem;
@@ -59,28 +60,6 @@ img{
       }
     }
   }
-  .jiantou{
-    position: absolute;
-    right: -1.5rem;
-    top: 30%;
-    width: 1rem;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    div{
-      width: 1rem;
-      height: 1rem;
-      line-height: 1rem;
-      text-align: center;
-      font-size: 0.8rem;
-      margin: 0.5rem 0;
-      img{
-        width: 1rem;
-        height: 1rem;
-      }
-    }
-  }
 }
 
 .swiper-wrapper{
@@ -88,23 +67,65 @@ img{
   height: 5.84rem;
   padding: 0.4rem 0.5rem;
   position: relative;
-
-
+  .di{
+    width: 3.2rem;
+    height: 5.04rem;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .left-deng{
+    width: 1.41rem;
+    height: 2.98rem;
+    position: absolute;
+    top: -0.915rem;
+    left: -0.485rem;
+    z-index: 2;
+  }
+  .right-deng{
+    width: 1.41rem;
+    height: 2.98rem;
+    position: absolute;
+    top: -1.255rem;
+    left: 2.195rem;
+    z-index: 2;
+  }
+  .hongdi{
+    width: 2.82rem;
+    height: 4.49rem;
+    top: 0.415rem;
+    left: 0.245rem;
+    position: absolute;
+  }
+  .xuehua{
+    width: 2.61rem;
+    height: 4.28rem;
+    left: 0.28rem;
+    top: 0.415rem;
+    position: absolute;
+  }
+  .kuang{
+    width: 2.49rem;
+    height: 4.14rem;
+    top: 0.485rem;
+    left: 0.33rem;
+    position: absolute;
+  }
+  .ditu{
+    width: 3.12rem;
+    height: 5.01rem;
+    top: 0.03rem;
+    left: 0.05rem;
+    position: absolute;
+  }
   .swiper-slide{
     width: 3.2rem;
     height: 5.04rem;
-
     .sontent1{
       width: 100%;
       height: 100%;
-      .di{
-        width: 3.2rem;
-        height: 5.04rem;
-        img{
-          width: 100%;
-          height: 100%;
-        }
-      }
+
       .sonten{
         width: 3.12rem;
         height: 5.01rem;
@@ -112,28 +133,8 @@ img{
         left: 0;
         top: 0;
         overflow: hidden;
-        .left-deng{
-          width: 1.41rem;
-          height: 2.98rem;
-          position: absolute;
-          top: -0.915rem;
-          left: -0.485rem;
-          z-index: 2;
-        }
-        .right-deng{
-          width: 1.41rem;
-          height: 2.98rem;
-          position: absolute;
-          top: -1.255rem;
-          left: 2.195rem;
-          z-index: 2;
-        }
-       .ditu{
-          width: 3.12rem;
-          height: 5.01rem;
-          top: 0.03rem;
-          left: 0.05rem;
-        }
+
+
         .text-nao{
           width: 0.53rem;
           height: 0.97rem;
@@ -243,20 +244,6 @@ img{
           line-height:0.22rem;
           font-family: FZXKJW_1712967488;
         }
-        .hongdi{
-          width: 2.82rem;
-          height: 4.49rem;
-          top: 0.415rem;
-          left: 0.245rem;
-          position: absolute;
-        }
-        .xuehua{
-          width: 2.61rem;
-          height: 4.28rem;
-          left: 0.28rem;
-          top: 0.415rem;
-          position: absolute;
-        }
         .duilian-heng{
           width: 1.25rem;
           height: auto;
@@ -279,12 +266,160 @@ img{
           letter-spacing: 0.01rem;
           text-align: center;
         }
-        .kuang{
-          width: 2.49rem;
-          height: 4.14rem;
-          top: 0.485rem;
-          left: 0.33rem;
+
+      }
+    }
+    .sontent2{
+      width: 100%;
+      height: 100%;
+      position: relative;
+      .left-deng{
+          animation: move4 3s linear 1.6s infinite;
+          @keyframes move4{
+            0%{
+              top: -0.915rem;
+            }
+            25%{
+              top: -1.1rem;
+            }
+            50%{
+              top: -0.8rem;
+            }
+            100%{
+              top: -0.915rem;
+            }
+          }
+      }
+      .right-deng{
+        animation: move4 3s linear 1.6s infinite;
+        @keyframes move4{
+          0%{
+            top: -1.225rem;
+          }
+          25%{
+            top: -1.4rem;
+          }
+          50%{
+            top: -1.1rem;
+          }
+          100%{
+            top: -1.225rem;
+          }
+        }
+      }
+      .sonten{
+        width: 3.12rem;
+        height: 5.01rem;
+        position: absolute;
+        left: 0;
+        top: 0;
+        overflow: hidden;
+        .yuan-1{
+          width: 0.43rem;
+          height: 0.43rem;
+          top: 0.655rem;
+          left: 0.725rem;
           position: absolute;
+        }
+        .yuan-2{
+          width: 0.43rem;
+          height: 0.43rem;
+          top: 0.655rem;
+          left: 1.18rem;
+          position: absolute;
+        }
+        .yuan-3{
+          width: 0.43rem;
+          height: 0.43rem;
+          top: 0.655rem;
+          left: 1.635rem;
+          position: absolute;
+        }
+        .yuan-4{
+          width: 0.43rem;
+          height: 0.43rem;
+          top: 0.655rem;
+          left: 2.09rem;
+          position: absolute;
+        }
+        .text{
+          width: 2.93rem;
+          height: auto;
+          left: 0.265rem;
+          top: 0.76rem;
+          position: absolute;
+          border-color: rgb(0,0,0);
+          color: rgb(255,199,134);
+          font-size: 0.24rem;
+          line-height: 0.26rem;
+          letter-spacing: 0.22rem;
+          border-radius: 0rem;
+          text-align: center;
+        }
+        .tangyuan{
+          width: 0.99rem;
+          height: 0.67rem;
+          top: 3.845rem;
+          left: 1.105rem;
+          position: absolute;
+          img{
+            animation: move5 1.5s linear 0s infinite;
+            @keyframes move5 {
+              0% {
+                transform: rotate(0deg);
+              }
+              20% {
+                transform: rotate(15deg);
+              }
+              40% {
+                transform: rotate(-15deg);
+              }
+              60% {
+                transform: rotate(8deg);
+              }
+              80% {
+                transform: rotate(-8deg);
+              }
+              100% {
+                transform: rotate(0deg);
+              }
+            }
+          }
+
+        }
+        .yan{
+          width: 0.43rem;
+          height: 0.76rem;
+          top: 3.345rem;
+          left: 1.455rem;
+          position: absolute;
+          img{
+            animation: move6 1.5s linear 0s infinite;
+            @keyframes move6 {
+              0% {
+                transform:scale(0.3);
+                opacity:0.3;
+              }
+              100% {
+                transform: scale(1);
+                opacity: 1;
+              }
+            }
+          }
+        }
+        .text-c{
+          width: 2.03rem;
+          height: auto;
+          left: 0.585rem;
+          top: 1.225rem;
+          position: absolute;
+          border-color: rgb(0,0,0);
+          color: rgb(255,199,134);
+          font-size: 0.14rem;
+          line-height: 0.22rem;
+          letter-spacing: 0.01rem;
+          border-radius: 0rem;
+          text-align: left;
         }
       }
     }
