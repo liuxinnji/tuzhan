@@ -64,130 +64,58 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 2, ../sass/stley.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 5, ../sass/stley.scss */
 img {
   width: 100%;
   height: 100%;
 }
 
-/* line 6, ../sass/stley.scss */
+/* line 9, ../sass/stley.scss */
 .box {
   padding: 0.4rem 0.5rem;
-  width: 9rem;
+  width: 4.65rem;
   position: relative;
 }
-/* line 10, ../sass/stley.scss */
-.box .jiantou {
-  position: absolute;
-  right: -1.5rem;
-  top: 30%;
-  width: 1rem;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  cursor: pointer;
-}
-/* line 19, ../sass/stley.scss */
-.box .jiantou div {
-  width: 1rem;
-  height: 1rem;
-  line-height: 1rem;
-  text-align: center;
-  font-size: 0.8rem;
-  margin: 0.5rem 0;
-}
-/* line 26, ../sass/stley.scss */
-.box .jiantou div img {
-  width: 1rem;
-  height: 1rem;
-}
-
-/* line 34, ../sass/stley.scss */
-.swiper-wrapper {
-  width: 4.5rem;
-  height: 5.84rem;
-  padding: 0.4rem 0.5rem;
-}
-/* line 38, ../sass/stley.scss */
-.swiper-wrapper .swiper-slide {
-  width: 3.2rem;
-  height: 5.04rem;
-}
-/* line 41, ../sass/stley.scss */
-.swiper-wrapper .swiper-slide .sontent1 {
-  width: 100%;
-  height: 100%;
-}
-/* line 44, ../sass/stley.scss */
-.swiper-wrapper .swiper-slide .sontent1 .di {
-  width: 3.2rem;
-  height: 5.04rem;
-}
-/* line 47, ../sass/stley.scss */
-.swiper-wrapper .swiper-slide .sontent1 .di img {
-  width: 100%;
-  height: 100%;
-}
-/* line 52, ../sass/stley.scss */
-.swiper-wrapper .swiper-slide .sontent1 .sonten {
-  width: 3.12rem;
-  height: 5.01rem;
-  position: absolute;
-  left: 0;
-  top: 0;
-  overflow: hidden;
-}
-/* line 59, ../sass/stley.scss */
-.swiper-wrapper .swiper-slide .sontent1 .sonten .left-deng {
-  width: 1.41rem;
-  height: 2.98rem;
-  position: absolute;
-  top: -0.915rem;
-  left: -0.485rem;
-}
-/* line 66, ../sass/stley.scss */
-.swiper-wrapper .swiper-slide .sontent1 .sonten .right-deng {
-  width: 1.41rem;
-  height: 2.98rem;
-  position: absolute;
-  top: -1.255rem;
-  left: 2.195rem;
-}
-/* line 73, ../sass/stley.scss */
-.swiper-wrapper .swiper-slide .sontent1 .sonten .music {
+/* line 13, ../sass/stley.scss */
+.box .music {
   width: 0.3rem;
   height: 0.3rem;
-  left: 2.76rem;
-  top: 0.14rem;
+  left: 3.06rem;
+  top: 0.54rem;
   z-index: 2;
   position: absolute;
 }
-/* line 80, ../sass/stley.scss */
-.swiper-wrapper .swiper-slide .sontent1 .sonten .music .animate-wrapper {
+/* line 20, ../sass/stley.scss */
+.box .music .animate-wrapper {
   position: relative;
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
-/* line 85, ../sass/stley.scss */
-.swiper-wrapper .swiper-slide .sontent1 .sonten .music .animate-wrapper .bgmusic {
+/* line 25, ../sass/stley.scss */
+.box .music .animate-wrapper .bgmusic {
   width: 100%;
   height: 100%;
 }
-/* line 88, ../sass/stley.scss */
-.swiper-wrapper .swiper-slide .sontent1 .sonten .music .animate-wrapper .bgmusic .control {
+/* line 28, ../sass/stley.scss */
+.box .music .animate-wrapper .bgmusic .control {
   width: 100%;
   height: 100%;
   background: url("https://oss3.rabbitpre.com/rp/renderer/music.c0fda016db.gif") transparent no-repeat 50%;
   background-size: contain;
 }
-/* line 93, ../sass/stley.scss */
-.swiper-wrapper .swiper-slide .sontent1 .sonten .music .animate-wrapper .bgmusic .control .control-after {
+/* line 33, ../sass/stley.scss */
+.box .music .animate-wrapper .bgmusic .control .control-after {
   width: 100%;
   height: 100%;
   background: url("https://oss3.rabbitpre.com/rp/renderer/music_off.8d94020a5c.png") transparent no-repeat 50%;
   background-size: 100% 100%;
   animation: move 1.2s linear 0s infinite;
-  z-index: -1;
+  z-index: 2;
 }
 @keyframes move {
   0% {
@@ -206,14 +134,94 @@ img {
     transform: rotate(360deg);
   }
 }
-/* line 122, ../sass/stley.scss */
+/* line 62, ../sass/stley.scss */
+.box .jiantou {
+  position: absolute;
+  right: -1.5rem;
+  top: 30%;
+  width: 1rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+/* line 71, ../sass/stley.scss */
+.box .jiantou div {
+  width: 1rem;
+  height: 1rem;
+  line-height: 1rem;
+  text-align: center;
+  font-size: 0.8rem;
+  margin: 0.5rem 0;
+}
+/* line 78, ../sass/stley.scss */
+.box .jiantou div img {
+  width: 1rem;
+  height: 1rem;
+}
+
+/* line 86, ../sass/stley.scss */
+.swiper-wrapper {
+  width: 4.5rem;
+  height: 5.84rem;
+  padding: 0.4rem 0.5rem;
+  position: relative;
+}
+/* line 93, ../sass/stley.scss */
+.swiper-wrapper .swiper-slide {
+  width: 3.2rem;
+  height: 5.04rem;
+}
+/* line 97, ../sass/stley.scss */
+.swiper-wrapper .swiper-slide .sontent1 {
+  width: 100%;
+  height: 100%;
+}
+/* line 100, ../sass/stley.scss */
+.swiper-wrapper .swiper-slide .sontent1 .di {
+  width: 3.2rem;
+  height: 5.04rem;
+}
+/* line 103, ../sass/stley.scss */
+.swiper-wrapper .swiper-slide .sontent1 .di img {
+  width: 100%;
+  height: 100%;
+}
+/* line 108, ../sass/stley.scss */
+.swiper-wrapper .swiper-slide .sontent1 .sonten {
+  width: 3.12rem;
+  height: 5.01rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+}
+/* line 115, ../sass/stley.scss */
+.swiper-wrapper .swiper-slide .sontent1 .sonten .left-deng {
+  width: 1.41rem;
+  height: 2.98rem;
+  position: absolute;
+  top: -0.915rem;
+  left: -0.485rem;
+  z-index: 2;
+}
+/* line 123, ../sass/stley.scss */
+.swiper-wrapper .swiper-slide .sontent1 .sonten .right-deng {
+  width: 1.41rem;
+  height: 2.98rem;
+  position: absolute;
+  top: -1.255rem;
+  left: 2.195rem;
+  z-index: 2;
+}
+/* line 131, ../sass/stley.scss */
 .swiper-wrapper .swiper-slide .sontent1 .sonten .ditu {
   width: 3.12rem;
   height: 5.01rem;
   top: 0.03rem;
   left: 0.05rem;
 }
-/* line 128, ../sass/stley.scss */
+/* line 137, ../sass/stley.scss */
 .swiper-wrapper .swiper-slide .sontent1 .sonten .text-nao {
   width: 0.53rem;
   height: 0.97rem;
@@ -221,7 +229,7 @@ img {
   left: 1.94rem;
   position: absolute;
 }
-/* line 136, ../sass/stley.scss */
+/* line 145, ../sass/stley.scss */
 .swiper-wrapper .swiper-slide .sontent1 .sonten .text-yuan {
   width: 0.7rem;
   height: .94rem;
@@ -229,7 +237,7 @@ img {
   top: 2.085rem;
   position: absolute;
 }
-/* line 143, ../sass/stley.scss */
+/* line 152, ../sass/stley.scss */
 .swiper-wrapper .swiper-slide .sontent1 .sonten .text-xiao {
   width: 0.61rem;
   height: 0.98rem;
@@ -237,41 +245,144 @@ img {
   left: 1.91rem;
   position: absolute;
 }
-/* line 151, ../sass/stley.scss */
+/* line 160, ../sass/stley.scss */
 .swiper-wrapper .swiper-slide .sontent1 .sonten .text-yuan-1 {
   width: 1.43rem;
   height: 1.27rem;
   top: 1.745rem;
   left: 1.69rem;
   position: absolute;
+}
+/* line 166, ../sass/stley.scss */
+.swiper-wrapper .swiper-slide .sontent1 .sonten .text-yuan-1 img {
   animation: move1 4s linear 0s infinite;
 }
-/* line 160, ../sass/stley.scss */
+/* line 171, ../sass/stley.scss */
 .swiper-wrapper .swiper-slide .sontent1 .sonten .text-xiao-1 {
   width: 1.44rem;
   height: 1.22rem;
   top: 3.015rem;
   left: 1.675rem;
   position: absolute;
+}
+/* line 177, ../sass/stley.scss */
+.swiper-wrapper .swiper-slide .sontent1 .sonten .text-xiao-1 img {
   animation: move1 4s linear 0s infinite;
 }
-/* line 169, ../sass/stley.scss */
+/* line 182, ../sass/stley.scss */
 .swiper-wrapper .swiper-slide .sontent1 .sonten .text-nao-1 {
   width: 1.43rem;
   height: 1.22rem;
   top: 0.75rem;
   left: 1.575rem;
   position: absolute;
+}
+/* line 188, ../sass/stley.scss */
+.swiper-wrapper .swiper-slide .sontent1 .sonten .text-nao-1 img {
   animation: move1 4s linear 0s infinite;
 }
 @keyframes move1 {
   0% {
     opacity: 0;
   }
-  50% {
+  100% {
     opacity: 1;
   }
-  100% {
-    opacity: 0;
+}
+/* line 200, ../sass/stley.scss */
+.swiper-wrapper .swiper-slide .sontent1 .sonten .tangyuan {
+  width: 2.53rem;
+  height: 2.54rem;
+  top: 2.54rem;
+  left: -0.035rem;
+  position: absolute;
+  animation: move3 3s linear 0s infinite;
+}
+@keyframes move3 {
+  0% {
+    transform: rotate(0deg);
   }
+  20% {
+    transform: rotate(20deg);
+  }
+  40% {
+    transform: rotate(-20deg);
+  }
+  60% {
+    transform: rotate(15deg);
+  }
+  80% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+/* line 228, ../sass/stley.scss */
+.swiper-wrapper .swiper-slide .sontent1 .sonten .duilian {
+  width: 0.25rem;
+  height: 1.58rem;
+  top: 1.505rem;
+  left: 1.0775rem;
+  position: absolute;
+}
+/* line 235, ../sass/stley.scss */
+.swiper-wrapper .swiper-slide .sontent1 .sonten .duilian-text {
+  width: 0.18rem;
+  height: auto;
+  left: 1.1125rem;
+  top: 1.745rem;
+  position: absolute;
+  color: #ffc786;
+  font-size: 0.16rem;
+  line-height: 0.22rem;
+  font-family: FZXKJW_1712967488;
+}
+/* line 246, ../sass/stley.scss */
+.swiper-wrapper .swiper-slide .sontent1 .sonten .hongdi {
+  width: 2.82rem;
+  height: 4.49rem;
+  top: 0.415rem;
+  left: 0.245rem;
+  position: absolute;
+}
+/* line 253, ../sass/stley.scss */
+.swiper-wrapper .swiper-slide .sontent1 .sonten .xuehua {
+  width: 2.61rem;
+  height: 4.28rem;
+  left: 0.28rem;
+  top: 0.415rem;
+  position: absolute;
+}
+/* line 260, ../sass/stley.scss */
+.swiper-wrapper .swiper-slide .sontent1 .sonten .duilian-heng {
+  width: 1.25rem;
+  height: auto;
+  left: 0.58rem;
+  top: 0.985rem;
+  position: absolute;
+  color: #ffc786;
+  font-size: 0.18rem;
+  line-height: 0.24rem;
+  letter-spacing: 0.01rem;
+}
+/* line 271, ../sass/stley.scss */
+.swiper-wrapper .swiper-slide .sontent1 .sonten .guanggao {
+  width: 2.81rem;
+  height: auto;
+  left: 0.18rem;
+  top: 0.625rem;
+  position: absolute;
+  color: #ffc786;
+  font-size: 0.14rem;
+  letter-spacing: 0.01rem;
+  text-align: center;
+}
+/* line 282, ../sass/stley.scss */
+.swiper-wrapper .swiper-slide .sontent1 .sonten .kuang {
+  width: 2.49rem;
+  height: 4.14rem;
+  top: 0.485rem;
+  left: 0.33rem;
+  position: absolute;
 }
